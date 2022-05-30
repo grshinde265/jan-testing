@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <groups>
+		<run>
+			<exclude name="Two Wheeler"/>
+		</run>
+	</groups>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestNG_Programs.groupsDemo"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="abc">
+  <classes>
+  <class name="TestNG_Programs.PriorityDemo"></class>
+  </classes>
+  </test> 
+  <test name="pqr">
+  <classes>
+  <class name="TestNG_Programs.AnnotationSeq"></class>
+  </classes>
+  </test>
+</suite> <!-- Suite -->
